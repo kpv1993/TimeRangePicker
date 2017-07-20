@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ea1938"
+        android:id="@+id/m"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/fromTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="FROM"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="TO"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/toTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="TO"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/al"
+        android:layout_below="@id/m">
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <com.example.android.timerangepicker.TimeNumberPicker
+                android:id="@+id/p1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                />
+            <com.example.android.timerangepicker.TimeNumberPicker
+                android:id="@+id/p2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleX="1.2"
+                android:scaleY="1.2"/>
+            <com.example.android.timerangepicker.TimeNumberPicker
+                android:id="@+id/p3"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:scaleX="1.2"
+                android:scaleY="1.2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#9E9E9E"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/sep1"/>
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <com.example.android.timerangepicker.TimeNumberPicker
+                android:id="@+id/p4"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:scaleX="1.2"
+                android:scaleY="1.2" />
+            <com.example.android.timerangepicker.TimeNumberPicker
+                android:id="@+id/p5"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:scaleX="1.2"
+                android:scaleY="1.2"/>
+            <com.example.android.timerangepicker.TimeNumberPicker
+                android:id="@+id/p6"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleX="1.2"
+                android:scaleY="1.2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/al"
+        android:id="@+id/t1"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:textColor="#ea1938"
+        android:textSize="12sp"
+        android:text="* Maximum interval 8 hours"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:text="Cancel"
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/confirmNotOk"
+            android:background="@drawable/mgred_border"
+            android:textSize="14dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:text="Ok"
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmOk"
+            android:background="@drawable/red_button"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
