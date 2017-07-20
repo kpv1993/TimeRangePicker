@@ -138,7 +138,8 @@
         android:textColor="#ea1938"
         android:textSize="12sp"
         android:text="* Maximum interval 8 hours"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
